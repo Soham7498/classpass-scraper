@@ -12,7 +12,7 @@ class Scraper():
     # max_iter defines the max number of reqeust attempts.
     # If the max number of attempt is reached, the requests might be blocked.
     max_iter = 10
-    search_url = 'https://classpass.com/_api/unisearch/v1/layout/web_search_page'
+    search_url = 'https://web.classplusapp.com/store/course/436470/19234506?section=content'
     search_categories = ['fitness', 'gym', 'wellness']
     search_request_header = {
         'authority': 'classpass.com',
@@ -24,10 +24,10 @@ class Scraper():
         'accept-language': 'en-US,en',
         'content-type': 'application/json',
         # Token comes from the search page of classpass. It was hardcoded in `production` mode as the following value.
-        'cp-authorization': 'Token 711016a6872c11e5a72022000bca01dd',
+        'cp-authorization': 'Token eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOjUwLCJzb3VyY2VfYXBwIjoiY2xhc3NwbHVzIiwic2Vzc2lvbl9pZCI6ImRlMjI2MjZhLThlOTgtNDk1Zi1iYjY2LTU3ZTY0ZDdiNDM4MCIsInZpc2l0b3JfaWQiOiJkNTQ0MDVlMy1hY2EyLTQ0YTgtYjJmOC0wN2I3MTcxYzgyZjciLCJjcmVhdGVkX2F0IjoxNzE5MDc0Mjk1ODEwLCJuYW1lIjoiRGluZXNoIFNpciIsIm9yZ19jb2RlIjoianNkcnYiLCJvcmdfaWQiOjM1MDA2MywicGhvbmUiOiI5MTk1NTIwMjE4NzUiLCJzb3VyY2VfdXNlcl9pZCI6IjEyMDAyNzQ4MCIsInVzZXJfdHlwZSI6MSwiZW1haWwiOiJtYWhhamFubjQwOEBnbWFpbC5jb20iLCJjb3VudHJ5X2NvZGUiOiJJTiIsImlzX3VzZXJpZF9ldmVuIjp0cnVlLCJjYXRlZ29yeSI6IksxMiIsImNvaG9ydCI6IkdvZEZhdGhlciIsImlzX3N0b3JlIjoxLCJpYXQiOjE3MTk5ODM3NjcsImV4cCI6MTcyMTI3OTc2N30.qFSMZLyldYFWWGyOBD9ppxK7I6f7hjjKboHEFM_FPoGy5eQlyyRzbmpnfFXTtjzi',
         'origin': 'https://classpass.com',
         'platform': 'web',
-        'referer': 'https://classpass.com/search/ladera-heights-ca-usa/fitness-classes/4VvdcJFiBgT',
+        'referer': 'https://web.classplusapp.com/store/course/436470/19234506?section=content',
         'User-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'
     }
     place_id_url = 'https://classpass.com/_api/unisearch/v1/location/autocomplete'
@@ -36,7 +36,7 @@ class Scraper():
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'en-US, en',
         'Content-Type': 'application/json',
-        'CP-Authorization': 'Token 711016a6872c11e5a72022000bca01dd',
+        'CP-Authorization': 'Token eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOjUwLCJzb3VyY2VfYXBwIjoiY2xhc3NwbHVzIiwic2Vzc2lvbl9pZCI6ImRlMjI2MjZhLThlOTgtNDk1Zi1iYjY2LTU3ZTY0ZDdiNDM4MCIsInZpc2l0b3JfaWQiOiJkNTQ0MDVlMy1hY2EyLTQ0YTgtYjJmOC0wN2I3MTcxYzgyZjciLCJjcmVhdGVkX2F0IjoxNzE5MDc0Mjk1ODEwLCJuYW1lIjoiRGluZXNoIFNpciIsIm9yZ19jb2RlIjoianNkcnYiLCJvcmdfaWQiOjM1MDA2MywicGhvbmUiOiI5MTk1NTIwMjE4NzUiLCJzb3VyY2VfdXNlcl9pZCI6IjEyMDAyNzQ4MCIsInVzZXJfdHlwZSI6MSwiZW1haWwiOiJtYWhhamFubjQwOEBnbWFpbC5jb20iLCJjb3VudHJ5X2NvZGUiOiJJTiIsImlzX3VzZXJpZF9ldmVuIjp0cnVlLCJjYXRlZ29yeSI6IksxMiIsImNvaG9ydCI6IkdvZEZhdGhlciIsImlzX3N0b3JlIjoxLCJpYXQiOjE3MTk5ODM3NjcsImV4cCI6MTcyMTI3OTc2N30.qFSMZLyldYFWWGyOBD9ppxK7I6f7hjjKboHEFM_FPoGy5eQlyyRzbmpnfFXTtjzi',
         'Host': 'classpass.com',
         'Origin': 'https://classpass.com',
         'platform': 'web',
